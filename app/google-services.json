@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "802722570990",
+    "project_id": "ucucite-bca47",
+    "storage_bucket": "ucucite-bca47.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802722570990:android:798a8efb12c188a60909ff",
+        "android_client_info": {
+          "package_name": "com.example.ucu_cite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "802722570990-671397dgme3j7mm3242jcnpf4as4p8ij.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ucu_cite",
+            "certificate_hash": "374d06c571b904ea089203cf33a8550c1d07b957"
+          }
+        },
+        {
+          "client_id": "802722570990-ppgatrqpn31d30ae153g9366cplfrspi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATr5BnXgcN7qtD9p0R8A37-LZ6IRs3SFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "802722570990-ppgatrqpn31d30ae153g9366cplfrspi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
