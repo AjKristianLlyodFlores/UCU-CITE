@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/ic_more_"
+        android:title="Home"
+        app:showAsAction="always">
+
+
+        <menu>
+            <item
+                android:id="@+id/PF"
+                android:icon="@drawable/ic_baseline_person1"
+                android:title="Profile"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/CT"
+                android:icon="@drawable/ic_baseline_people_24"
+                android:title="Consulatation"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/AP"
+                android:icon="@drawable/ic_baseline_location_on_24"
+                android:title="API MAP"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/out"
+                android:icon="@drawable/ic_baseline_exit_to_app_"
+                android:title="Logout"
+                app:showAsAction="never" />
+            #14946C
+        </menu>
+    </item>
+</menu>

@@ -25,6 +25,7 @@ public class Registered extends AppCompatActivity {
     FirebaseAuth mAuth;
     ProgressDialog progressDialog;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+    String contact = "[0-9]";
 
 
     @Override
@@ -49,6 +50,7 @@ public class Registered extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
+
     }
 
     public void register(View view) {
@@ -63,15 +65,17 @@ public class Registered extends AppCompatActivity {
         if (!email.matches(emailPattern)) {
             editemail.setError("Enter Correct Email");
         } else if (password.isEmpty() || password.length() < 6) {
-            editpass.setError("Enter Proper Password");
-        }else if(!password.equals(password1)){
+            editpass.setError("Enter 6 character above");
+        }else if(!password.equals(password1)) {
             editpass2.setError("Password not Match both field");
 
-        }else{
+        }
+        else{
             progressDialog.setMessage("Please Wait Registration.....");
             progressDialog.setTitle("Registration");
             progressDialog.setCanceledOnTouchOutside(false);
             progressDialog.show();
+
 
             mAuth.createUserWithEmailAndPassword(email, password)
                     .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -108,13 +112,13 @@ public class Registered extends AppCompatActivity {
 
     }
     private void sendUserToNextActivity() {
-        Intent intent=new Intent(Registered.this,login.class);
+        Intent intent=new Intent(Registered.this,MainActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
 
     public void btnlogin(View view) {
-        Intent intent = new Intent(Registered.this, login.class);
+        Intent intent = new Intent(Registered.this, MainActivity.class);
         startActivity(intent);
     }
 }

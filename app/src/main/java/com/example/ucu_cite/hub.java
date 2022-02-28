@@ -1,10 +1,20 @@
 package com.example.ucu_cite;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -21,13 +31,17 @@ public class hub extends AppCompatActivity {
     ImageView yu, it, ikonek, mis, psy, account, portal, ucusc;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        getSupportActionBar().hide();
         setContentView(R.layout.activity_hub);
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimary)));;
+
+        
+
+
         yu = findViewById(R.id.imageView8);
         ucu1 = findViewById(R.id.ucu1);
         it = findViewById(R.id.it);
@@ -123,14 +137,14 @@ public class hub extends AppCompatActivity {
         account.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gotoUrl("https://www.facebook.com/ucuciteofficial/");
+                gotoUrl("https://www.facebook.com/ucuaccounting");
 
             }
         });
         account1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gotoUrl("https://www.facebook.com/ucuciteofficial/");
+                gotoUrl("https://www.facebook.com/ucuaccounting");
 
             }
         });
@@ -163,8 +177,41 @@ public class hub extends AppCompatActivity {
             }
         });
 
+
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_item,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int item_id=item.getItemId();
+        if (item_id==R.id.PF){
+            Toast.makeText(this,"This is Profile ",Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(hub.this, aboutus.class);
+            startActivity(intent);
+        }
+        else if (item_id==R.id.CT){
+            Toast.makeText(this,"This is Consutation  ",Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(hub.this, Consultation.class);
+            startActivity(intent);
+        }
+        else if (item_id==R.id.AP){
+            Toast.makeText(this,"API GOOGLE MAP",Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(hub.this,API.class);
+            startActivity(intent);
+        }
+        else if (item_id==R.id.out){
+            Toast.makeText(this,"Exit",Toast.LENGTH_SHORT).show();
+            FirebaseAuth.getInstance().signOut();
+            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            finish();
+        }
+        return true;
+    }
 
     private void gotoUrl(String s) {
         Uri uri = Uri.parse(s);
@@ -172,13 +219,22 @@ public class hub extends AppCompatActivity {
     }
 
 
-
     public void logout(View view) {
         FirebaseAuth.getInstance().signOut();
-        startActivity(new Intent(getApplicationContext(), login.class));
+        startActivity(new Intent(getApplicationContext(), MainActivity.class));
         finish();
 
 
+    }
+
+    public void Next(View view) {
+        Intent intent = new Intent(hub.this, Consultation.class);
+        startActivity(intent);
+    }
+
+    public void about(View view) {
+        Intent intent = new Intent(hub.this, aboutus.class);
+        startActivity(intent);
     }
 
 }

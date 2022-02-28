@@ -5,87 +5,98 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:backgroundTint="#A8B1B6"
+    android:backgroundTint="@color/white"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/startBtn"
-        android:layout_width="144dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="44dp"
+    <EditText
+        android:id="@+id/mEmail"
+        android:layout_width="232dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
 
-        android:backgroundTint="@color/teal_200"
-        android:text="GET STARTED"
-        app:iconTint="@android:color/holo_orange_light"
+        android:backgroundTint="#070606"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:ems="10"
+        android:hint="Email Address "
+
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="324dp"
+        android:layout_height="27dp"
+        android:fontFamily="@font/aclonica"
+        android:text="UCU CITE INFORMATION HUB"
+        android:textAlignment="viewStart"
+        android:textColor="#050505"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="232dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#090707"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/mEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/mEmail"
+        app:layout_constraintTop_toBottomOf="@+id/mEmail"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="113dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#149117"
+        android:onClick="login"
+        android:text="LOGIN "
+        app:iconTint="@android:color/holo_orange_light"
+        app:layout_constraintEnd_toEndOf="@+id/pass"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/pass"
+        app:layout_constraintTop_toBottomOf="@+id/pass"
         app:strokeColor="#FFAB00" />
 
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="Toreg"
+        android:text="New Here? Sign up here."
+        android:textColor="#149117"
+        app:layout_constraintEnd_toEndOf="@+id/loginBtn"
+        app:layout_constraintStart_toStartOf="@+id/loginBtn"
+        app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="305dp"
-        android:layout_height="292dp"
-        android:layout_marginTop="44dp"
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/bg" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="144dp"
-        android:text="CITE INFORMATION HUB"
-        android:textColor="@color/black"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView7"
-        app:layout_constraintStart_toStartOf="@+id/imageView6"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="#1 San Vicente West,Urdaneta City,Pangasinan,Phillipines"
-        android:textColor="#070707"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="ucuciteofficial College and University"
-        android:textColor="#070707"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="74dp"
-        android:layout_height="66dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="36dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/it" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="74dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="56dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/yu" />
 </androidx.constraintlayout.widget.ConstraintLayout>
