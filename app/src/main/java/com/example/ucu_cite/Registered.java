@@ -1,23 +1,22 @@
 package com.example.ucu_cite;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.EditText;
-
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-
 import com.google.firebase.database.FirebaseDatabase;
 
 public class Registered extends AppCompatActivity {
@@ -26,7 +25,8 @@ public class Registered extends AppCompatActivity {
     ProgressDialog progressDialog;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     String contact = "[0-9]";
-
+    float v = 0;
+    Button registerBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,13 +39,45 @@ public class Registered extends AppCompatActivity {
 
         editfname = findViewById(R.id.fname);
         editLname = findViewById(R.id.Lname);
+        registerBtn = findViewById(R.id.registerBtn);
         editidnum = findViewById(R.id.Idnum);
-        editemail = findViewById(R.id.mEmail);
+        editemail = findViewById(R.id.email);
         editpass = findViewById(R.id.pass);
         editpass2 = findViewById(R.id.pass2);
+        editcontact = findViewById(R.id.contact);
         progressDialog = new ProgressDialog(this);
 
-        editcontact = findViewById(R.id.contact);
+        editemail.setTranslationX(800);
+        editpass.setTranslationX(800);
+        editfname.setTranslationX(800);
+        editLname.setTranslationX(800);
+        editpass2.setTranslationX(800);
+        editidnum.setTranslationX(800);
+        editcontact.setTranslationX(800);
+        registerBtn.setTranslationX(800);
+
+
+        editemail.setAlpha(v);
+        editpass.setAlpha(v);
+        editpass2.setAlpha(v);
+        editfname.setAlpha(v);
+        editLname.setAlpha(v);
+        editidnum.setAlpha(v);
+        editcontact.setAlpha(v);
+        editpass.setAlpha(v);
+        registerBtn.setAlpha(v);
+
+
+
+        editemail.animate().translationX (0).alpha (1).setDuration (500).setStartDelay(300).start();
+        editpass.animate().translationX(0).alpha (1).setDuration (500).setStartDelay(300).start();
+        editpass2.animate().translationX (0).alpha (1).setDuration (500).setStartDelay(300).start();
+        editfname.animate().translationX(0).alpha (1).setDuration (500).setStartDelay(300).start();
+        editLname.animate().translationX (0).alpha (1).setDuration (500).setStartDelay(300).start();
+        editidnum.animate().translationX(0).alpha (1).setDuration (500).setStartDelay(300).start();
+        editcontact.animate().translationX(0).alpha (1).setDuration (500).setStartDelay(300).start();
+        registerBtn.animate().translationX(0).alpha (1).setDuration (500).setStartDelay(300).start();
+
 
 
         mAuth = FirebaseAuth.getInstance();
@@ -54,10 +86,10 @@ public class Registered extends AppCompatActivity {
     }
 
     public void register(View view) {
-        String name, name1, id, email, password,password1, contact;
+        String name, name1, idnum, email, password,password1, contact;
         name = editfname.getText().toString().trim();
         name1 = editLname.getText().toString().trim();
-        id = editidnum.getText().toString().trim();
+        idnum = editidnum.getText().toString().trim();
         email = editemail.getText().toString().trim();
         password = editpass.getText().toString().trim();
         password1= editpass2.getText().toString().trim();
@@ -83,7 +115,7 @@ public class Registered extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
 
                             if (task.isSuccessful()) {
-                                User user = new User(name, name1, id, email, contact);
+                                User user = new User(name,name1,password,idnum,email,contact);
                                 FirebaseDatabase.getInstance().getReference("Users")
                                         .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
 

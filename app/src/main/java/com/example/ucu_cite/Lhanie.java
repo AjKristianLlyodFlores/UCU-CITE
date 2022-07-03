@@ -1,7 +1,5 @@
 package com.example.ucu_cite;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -13,8 +11,10 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class Lhanie extends AppCompatActivity {
-    ImageView fz;
+    ImageView fz,fz1;
     TextView mess10;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,7 @@ public class Lhanie extends AppCompatActivity {
         setContentView(R.layout.activity_lhanie);
 
         fz = findViewById(R.id.fz);
+        fz1 = findViewById(R.id.fz1);
 
 
         fz.setOnClickListener(new View.OnClickListener() {
@@ -34,8 +35,15 @@ public class Lhanie extends AppCompatActivity {
 
             }
         });
+        fz1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoUrl("https://www.facebook.com/lmdvera");
+
+            }
+        });
         TextView mess10= (TextView) findViewById(R.id.mess10);
-        mess10.setText(Html.fromHtml("<a href=\"mailto:lhaniedevera@ucu.edu.ph\"> lhaniedevera@ucu.edu.ph</a>"));
+        mess10.setText(Html.fromHtml("<a href=\"mailto:lhaniedevera@ucu.edu.ph\">.</a>"));
         mess10.setMovementMethod(LinkMovementMethod.getInstance());
 
     }
@@ -47,8 +55,5 @@ public class Lhanie extends AppCompatActivity {
     }
 
 
-    public void previous3(View view) {
-        Intent intent = new Intent(Lhanie.this, Consultation.class);
-        startActivity(intent);
-    }
+
 }

@@ -1,7 +1,5 @@
 package com.example.ucu_cite;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -13,9 +11,11 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class Maricel extends AppCompatActivity {
-    ImageView ft;
-    TextView mess11;
+    ImageView mr,mr1;
+    TextView mess14;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,19 +24,29 @@ public class Maricel extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_maricel);
 
-        ft = findViewById(R.id.ft);
+        mr = findViewById(R.id.mr);
+        mr1 = findViewById(R.id.mr1);
 
 
-        ft.setOnClickListener(new View.OnClickListener() {
+
+        mr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 gotoUrl("https://www.facebook.com/maricel.erama.1");
 
             }
         });
-        TextView mess11 = (TextView) findViewById(R.id.mess11);
-        mess11.setText(Html.fromHtml("<a href=\"mailto: maricelerama@ucu.edu.ph\"> maricelerama@ucu.edu.ph</a>"));
-        mess11.setMovementMethod(LinkMovementMethod.getInstance());
+
+        mr1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoUrl("https://www.facebook.com/maricel.erama.1");
+
+            }
+        });
+        TextView mess14= (TextView) findViewById(R.id.mess14);
+        mess14.setText(Html.fromHtml("<a href=\"mailto:maricelerama@ucu.edu.ph\">.</a>"));
+        mess14.setMovementMethod(LinkMovementMethod.getInstance());
 
     }
 
@@ -47,8 +57,5 @@ public class Maricel extends AppCompatActivity {
     }
 
 
-    public void previous6(View view) {
-        Intent intent = new Intent(Maricel.this, Consultation.class);
-        startActivity(intent);
-    }
+
 }

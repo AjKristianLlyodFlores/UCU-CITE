@@ -1,7 +1,5 @@
 package com.example.ucu_cite;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -13,8 +11,10 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class Joemark extends AppCompatActivity {
-    ImageView fl;
+    ImageView fl,fl1;
     TextView mess12;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,8 @@ public class Joemark extends AppCompatActivity {
 
         fl = findViewById(R.id.fl);
 
+        fl1 = findViewById(R.id.fl1);
+
 
         fl.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,8 +37,16 @@ public class Joemark extends AppCompatActivity {
 
             }
         });
+
+        fl1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoUrl("https://www.facebook.com/joemark0420");
+
+            }
+        });
         TextView mess12= (TextView) findViewById(R.id.mess12);
-        mess12.setText(Html.fromHtml("<a href=\"mailto:jeomarkiopez@ucu.edu.ph\"> jeomarkiopez@ucu.edu.ph</a>"));
+        mess12.setText(Html.fromHtml("<a href=\"mailto:jeomarkiopez@ucu.edu.ph\">.</a>"));
         mess12.setMovementMethod(LinkMovementMethod.getInstance());
 
     }
@@ -48,8 +58,5 @@ public class Joemark extends AppCompatActivity {
     }
 
 
-    public void previous11(View view) {
-        Intent intent = new Intent(Joemark.this, Consultation.class);
-        startActivity(intent);
-    }
+
 }

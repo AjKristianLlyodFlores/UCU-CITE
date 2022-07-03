@@ -1,7 +1,5 @@
 package com.example.ucu_cite;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -13,8 +11,12 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class JHOHANS extends AppCompatActivity {
-    ImageView fm;
+    ImageView jh,jh1;
+    TextView mess10;
+
 
 
     @Override
@@ -24,25 +26,30 @@ public class JHOHANS extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_jhohans);
-        fm = findViewById(R.id.fm);
+        jh = findViewById(R.id.jh);
+        jh1 = findViewById(R.id.jh1);
 
 
-        fm.setOnClickListener(new View.OnClickListener() {
+        jh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 gotoUrl("https://www.facebook.com/jbrabago");
 
             }
         });
-        TextView mess5 = (TextView) findViewById(R.id.mess5);
-        mess5.setText(Html.fromHtml("<a href=\"mailto:johannsrabago@ucu.edu.ph\">  johannsrabago@ucu.edu.ph</a>"));
-        mess5.setMovementMethod(LinkMovementMethod.getInstance());
+        jh1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoUrl("https://www.facebook.com/jbrabago");
+
+            }
+        });
+        TextView mess9 = (TextView) findViewById(R.id.mess9);
+        mess9.setText(Html.fromHtml("<a href=\"mailto:johannsrabago@ucu.edu.ph\">.</a>"));
+        mess9.setMovementMethod(LinkMovementMethod.getInstance());
 
     }
-    public void previous(View view) {
-        Intent intent = new Intent(JHOHANS.this, Consultation.class);
-        startActivity(intent);
-    }
+
 
     private void gotoUrl(String s) {
         Uri uri = Uri.parse(s);
@@ -50,8 +57,4 @@ public class JHOHANS extends AppCompatActivity {
     }
 
 
-
 }
-
-
-

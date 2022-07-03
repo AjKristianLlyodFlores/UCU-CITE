@@ -3,33 +3,46 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:icon="@drawable/ic_more_"
+        android:icon="@drawable/ic_baseline_view"
         android:title="Home"
         app:showAsAction="always">
 
 
         <menu>
             <item
-                android:id="@+id/PF"
-                android:icon="@drawable/ic_baseline_person1"
-                android:title="Profile"
+                android:id="@+id/Messageus"
+                android:icon="@drawable/ic_baseline_inf2"
+                android:title="About Us"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/block"
+                android:icon="@drawable/ic_baseline_cloud"
+                android:title="Block"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/enroll"
+                android:icon="@drawable/ic_baseline_cloud"
+                android:title="Enrollment"
                 app:showAsAction="never" />
             <item
                 android:id="@+id/CT"
                 android:icon="@drawable/ic_baseline_people_24"
                 android:title="Consulatation"
                 app:showAsAction="never" />
+
             <item
-                android:id="@+id/AP"
-                android:icon="@drawable/ic_baseline_location_on_24"
-                android:title="API MAP"
+                android:id="@+id/CU"
+                android:icon="@drawable/ic_baseline_file"
+                android:title="Curriculum"
                 app:showAsAction="never" />
+
             <item
                 android:id="@+id/out"
                 android:icon="@drawable/ic_baseline_exit_to_app_"
                 android:title="Logout"
                 app:showAsAction="never" />
-            #14946C
+
         </menu>
     </item>
 </menu>

@@ -1,7 +1,5 @@
 package com.example.ucu_cite;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -13,8 +11,10 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class Arnel extends AppCompatActivity {
-    ImageView fy;
+    ImageView fy, fy1;
     TextView mess12;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,7 @@ public class Arnel extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_arnel);
         fy = findViewById(R.id.fy);
+        fy1 = findViewById(R.id.fy1);
 
 
         fy.setOnClickListener(new View.OnClickListener() {
@@ -33,8 +34,15 @@ public class Arnel extends AppCompatActivity {
 
             }
         });
+        fy1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoUrl("https://www.facebook.com/arnel.ocay.73");
+
+            }
+        });
         TextView mess12 = (TextView) findViewById(R.id.mess12);
-        mess12.setText(Html.fromHtml("<a href=\"mailto: arnelocay@ucu.edu.ph\">arnelocay@ucu.edu.ph</a>"));
+        mess12.setText(Html.fromHtml("<a href=\"mailto: arnelocay@ucu.edu.ph\">.</a>"));
         mess12.setMovementMethod(LinkMovementMethod.getInstance());
 
     }
@@ -46,8 +54,5 @@ public class Arnel extends AppCompatActivity {
     }
 
 
-    public void previous7(View view) {
-        Intent intent = new Intent(Arnel.this, Consultation.class);
-        startActivity(intent);
-    }
+
 }

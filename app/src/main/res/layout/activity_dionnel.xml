@@ -4,166 +4,352 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:backgroundTint="@color/white"
-    tools:context=".Dionnel">
+    android:background="#D9D9D9"
+    tools:context=".Dionnel"
+    tools:layout_editor_absoluteX="-2dp"
+    tools:layout_editor_absoluteY="-37dp">
+
 
     <View
         android:id="@+id/view"
         android:layout_width="427dp"
-        android:layout_height="89dp"
-        android:background="#1F7A22"
+        android:layout_height="78dp"
+        android:background="#5D698A"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-8dp" />
 
     <ImageView
         android:id="@+id/log2"
-        android:layout_width="75dp"
-        android:layout_height="67dp"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toTopOf="@+id/view"
-        app:srcCompat="@drawable/bg"
+        app:srcCompat="@drawable/logos"
         tools:ignore="UnknownId" />
+
 
     <View
         android:id="@+id/view4"
-        android:layout_width="427dp"
-        android:layout_height="27dp"
-        android:background="@color/browser_actions_title_color"
+        android:layout_width="441dp"
+        android:layout_height="62dp"
+        android:background="@drawable/line"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view"
-        tools:layout_editor_absoluteX="-8dp"
         tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView29"
-        android:layout_width="174dp"
-        android:layout_height="28dp"
-        android:layout_marginTop="28dp"
-        android:text="Schedule "
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textColor="#050505"
-        android:textSize="20sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view4" />
-
-    <TextView
-        android:id="@+id/textView30"
-        android:layout_width="299dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="36dp"
-        android:text="Day/s : Wendnesday and Friday"
-        android:textAlignment="textStart"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.357"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView29" />
-
-    <TextView
-        android:id="@+id/textView31"
-        android:layout_width="255dp"
-        android:layout_height="37dp"
-        android:text="Time: 3:00 PM to 5:00 PM"
-        android:textAlignment="textStart"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.256"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView30" />
-
-    <TextView
-        android:id="@+id/textView32"
-        android:layout_width="149dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Preferred Mode:"
-        android:textAlignment="textStart"
-        android:textColor="#070404"
-        android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.125"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView31" />
-
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="154dp"
-        android:layout_height="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.038"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView32"
-        app:srcCompat="@drawable/meet1" />
-
-    <ImageView
-        android:id="@+id/fd"
-        android:layout_width="162dp"
-        android:layout_height="35dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.08"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView12"
-        app:srcCompat="@drawable/messa" />
 
     <ImageView
         android:id="@+id/imageView14"
-        android:layout_width="132dp"
-        android:layout_height="126dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="150dp"
+        android:layout_height="179dp"
+        android:layout_marginTop="28dp"
         android:background="#D8D7D7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.524"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fd"
+        app:layout_constraintTop_toBottomOf="@+id/view4"
         app:srcCompat="@drawable/a16" />
 
     <TextView
         android:id="@+id/textView33"
-        android:layout_width="157dp"
-        android:layout_height="25dp"
+        android:layout_width="275dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
         android:text="DIONNEL M. CAGUIN"
         android:textAlignment="center"
         android:textColor="@color/black"
+        android:textSize="22dp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView14" />
 
-    <Button
-        android:id="@+id/button2W"
-        android:layout_width="125dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="52dp"
-        android:backgroundTint="#149117"
-        android:text="Previous"
-        android:onClick="previous13"
-        app:layout_constraintEnd_toEndOf="@+id/textView33"
-        app:layout_constraintStart_toStartOf="@+id/textView33"
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="255dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Faculty Member"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView33" />
 
     <TextView
-        android:id="@+id/mess14"
-        android:layout_width="200dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="8dp"
-        android:text="TextView"
+        android:id="@+id/textView49"
+        android:layout_width="216dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="BS- Information technology"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView48" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="281dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Unity Earner - Secondary Education"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="289dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Master in Information Technology"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="380dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="AVAILABLE TIME TO SEND YOUR QUIRIES"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView54" />
+
+    <TextView
+        android:id="@+id/textView67"
+        android:layout_width="387dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="13dp"
+        android:text="Contact with:"
         android:textAlignment="center"
-        android:textColor="#149117"
-        app:layout_constraintEnd_toEndOf="@+id/textView33"
-        app:layout_constraintHorizontal_bias="0.511"
-        app:layout_constraintStart_toStartOf="@+id/textView33"
-        app:layout_constraintTop_toBottomOf="@+id/textView33"
-        tools:ignore="OnClick" />
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView69" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="216dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        android:text="Urdaneta City University"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="normal|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView49" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="368dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        android:text="Luzon College of Science and Technology"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="normal|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="247dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        android:text="(in - progress)"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="normal|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="297dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="15dp"
+        android:text="Tuesday to friday"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView55" />
+
+    <TextView
+        android:id="@+id/textView69"
+        android:layout_width="297dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="48dp"
+        android:text="3:00pm - 5:00pm"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView55" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="292dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:text="CONSULTATION"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/log2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="291dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="4dp"
+        android:text="URDANETA CITY UNIVERSITY"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="266dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="24dp"
+        android:text="COLLEGE OF INFORMATION TECHNOLOGY EDUCATION"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintHorizontal_bias="0.869"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <ImageView
+        android:id="@+id/fg1"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView67"
+        app:srcCompat="@drawable/facebook"/>
+
+    <ImageView
+        android:id="@+id/fg"
+        android:layout_width="52dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fg1"
+        app:layout_constraintTop_toBottomOf="@+id/textView67"
+        app:srcCompat="@drawable/re4" />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.312"
+        app:layout_constraintStart_toEndOf="@+id/fg"
+        app:layout_constraintTop_toBottomOf="@+id/textView67"
+        app:srcCompat="@drawable/p" />
+
+    <TextView
+        android:id="@+id/textView68"
+        android:layout_width="520dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/teal_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="53dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView22"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:srcCompat="@drawable/it" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="53dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:srcCompat="@drawable/yu" />
+
+    <TextView
+        android:id="@+id/mess02"
+        android:layout_width="36dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/fg"
+        app:layout_constraintTop_toBottomOf="@+id/textView67" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

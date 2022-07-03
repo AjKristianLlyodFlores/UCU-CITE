@@ -1,7 +1,5 @@
 package com.example.ucu_cite;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -13,9 +11,11 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class danilo extends AppCompatActivity {
-    ImageView fk;
-    TextView mess6;
+    ImageView ms3,ms31;
+    TextView mess03;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,19 +24,26 @@ public class danilo extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_danilo);
 
-        fk = findViewById(R.id.fk);
+        ms3 = findViewById(R.id.ms3);
+        ms31 = findViewById(R.id.ms31);
 
-
-        fk.setOnClickListener(new View.OnClickListener() {
+        ms3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 gotoUrl("https://www.facebook.com/danilodorado.bsit");
 
             }
         });
-        TextView mess6 = (TextView) findViewById(R.id.mess6);
-        mess6.setText(Html.fromHtml("<a href=\"mailto:danilodorado@ucu.edu.ph\">  danilodorado@ucu.edu.ph</a>"));
-        mess6.setMovementMethod(LinkMovementMethod.getInstance());
+        ms31.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoUrl("https://www.facebook.com/danilodorado.bsit");
+
+            }
+        });
+        TextView mess03 = (TextView) findViewById(R.id.mess03);
+        mess03.setText(Html.fromHtml("<a href=\"mailto:danilodorado@ucu.edu.ph\">.</a>"));
+        mess03.setMovementMethod(LinkMovementMethod.getInstance());
 
 
     }

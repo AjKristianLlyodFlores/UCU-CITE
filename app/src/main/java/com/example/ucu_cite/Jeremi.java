@@ -1,7 +1,5 @@
 package com.example.ucu_cite;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -13,8 +11,10 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class Jeremi extends AppCompatActivity {
-    ImageView fx;
+    ImageView fx,fx1;
     TextView mess9;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,7 @@ public class Jeremi extends AppCompatActivity {
 
 
         fx = findViewById(R.id.fx);
+        fx1 = findViewById(R.id.fx1);
 
 
         fx.setOnClickListener(new View.OnClickListener() {
@@ -35,8 +36,15 @@ public class Jeremi extends AppCompatActivity {
 
             }
         });
+        fx1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoUrl("https://www.facebook.com/jeremi.micua.1");
+
+            }
+        });
         TextView mess9 = (TextView) findViewById(R.id.mess9);
-        mess9.setText(Html.fromHtml("<a href=\"mailto:jeremimicua@ucu.edu.ph\"> jeremimicua@ucu.edu.ph</a>"));
+        mess9.setText(Html.fromHtml("<a href=\"mailto:jeremimicua@ucu.edu.ph\">.</a>"));
         mess9.setMovementMethod(LinkMovementMethod.getInstance());
 
     }
@@ -48,8 +56,5 @@ public class Jeremi extends AppCompatActivity {
     }
 
 
-    public void previous3(View view) {
-        Intent intent = new Intent(Jeremi.this, Consultation.class);
-        startActivity(intent);
-    }
+
 }

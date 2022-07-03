@@ -1,0 +1,3384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="-2dp"
+    tools:layout_editor_absoluteY="119dp">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/backdesign"
+        tools:context=".Curriculum">
+
+
+
+        <ImageView
+            android:id="@+id/log"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="#959494"
+            android:onClick="bb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logos"
+            tools:ignore="UnknownId" />
+
+        <ImageView
+            android:id="@+id/bk"
+            android:layout_width="70dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="-58dp"
+            android:onClick="bk"
+            app:srcCompat="@drawable/ic_baseline_keyboard1" />
+
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+
+                <TextView
+                    android:layout_height="40dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="First Semester"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Code"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Subject"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Grade"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.1"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Units"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="#959494"
+                    android:text="NATSC101"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#959494"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="GENERAL CHEMSTRY"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g1"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:background="#959494"
+                    android:paddingBottom="5dp"
+                    android:onClick="g1"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="NSTP101"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="LITERACY TRANING 1"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g2"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:onClick="g2"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="ENGL101"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="#959494"
+                    android:text="STUDY SKILLS AND CRITICAL"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g3"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:onClick="g3"
+                    android:background="#959494"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="SOCSI101"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="GENERAL PSYCHOLOGYW/ HIV"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g4"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:onClick="g4"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="MATH101"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="ALGEBRA"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g5"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:background="#959494"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:onClick="g5"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="PE101"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="PHYSICAL FITNESS"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g6"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:onClick="g6"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="IT101"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="#959494"
+                    android:text="INTRO TO I.T"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView android:id="@+id/g7"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:onClick="g7"
+                    android:background="#959494"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="IT102"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="COMPUTER PROGRAMMING"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g8"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:onClick="g8"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="IT103"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="#959494"
+                    android:text="FUNDAMENTALS OF APPLICATION"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g9"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:onClick="g9"
+                    android:background="#959494"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="PE101"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="PE AND SELF  TESTING"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g10"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:onClick="g10"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="2"
+                android:gravity="center"
+                android:paddingTop="60dp"
+                android:paddingBottom="5dp"
+
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+            <TableRow>
+
+
+                <TextView
+
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Second Semester"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Code"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Subject"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.1"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Units"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="PE2"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="#959494"
+                    android:text="FUND OF RHYTHMIC ACTIVITIES"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g11"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:background="#959494"
+                    android:paddingBottom="5dp"
+                    android:onClick="g11"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="NSTP102"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="LITERACY TRANING "
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:onClick="g12"
+                    android:text=""
+                    android:id="@+id/g12"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="IT104L"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:background="#959494"
+                    android:paddingBottom="5dp"
+                    android:text="COMPUTER ARCHITECTURE"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:background="#959494"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:id="@+id/g13"
+                    android:onClick="g13"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="#959494"
+                    android:text="3"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="ENGL102"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="WRITING IN THE DISCIPLINE"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:id="@+id/g14"
+                    android:onClick="g14"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="FIL1C"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:background="#959494"
+                    android:paddingBottom="5dp"
+                    android:text="KOMUNIKASYON SA AKADEMIKONG"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:background="#959494"
+                    android:onClick="g15"
+                    android:id="@+id/g15"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="#959494"
+                    android:text="3"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="IT105"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="COMPUTER PROGRAMMING 2"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:id="@+id/g16"
+                    android:onClick="g16"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="ELEC101"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:background="#959494"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="PROBABILTY AND STATISTIC"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:onClick="g17"
+                    android:paddingTop="5dp"
+                    android:background="#959494"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:id="@+id/g17"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+
+                    android:background="#959494"
+                    android:text="3"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="106L"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="COMPUTER ORGANIZATION"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:onClick="g18"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:id="@+id/g18"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="IT103"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:background="#959494"
+                    android:paddingBottom="5dp"
+                    android:text="FUNDAMENTALS OF APPLICATION"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:background="#959494"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:id="@+id/g19"
+                    android:text=""
+                    android:onClick="g19"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="PE101"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="PE 2"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:id="@+id/g20"
+                    android:onClick="g20"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+
+            </TableRow>
+
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="2"
+                android:gravity="center"
+                android:paddingTop="60dp"
+                android:text="2nd Year"
+                android:textSize="30dp"
+
+                android:paddingBottom="5dp"
+
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+            <TableRow>
+
+
+                <TextView
+
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="First Semester"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+
+
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Code"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Subject"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.1"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Units"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="IT106"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="#959494"
+                    android:text="DISCRETE MATH"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:id="@+id/g21"
+                    android:onClick="g21"
+                    android:background="#959494"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="#959494"
+                    android:text="3"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="IT109"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="DATA STRUCTURE"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:id="@+id/g22"
+                    android:onClick="g22"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="ENG103"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="SPEECH IMPORVEMENT"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:id="@+id/g23"
+                    android:onClick="g23"
+                    android:background="#959494"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:background="#959494"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="IT107"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+
+                    android:text="ORIENTED PROGRAMMING"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:id="@+id/g24"
+                    android:onClick="g24"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="IT108L"
+                    android:background="#959494"
+
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="WEB DESIGN"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:id="@+id/g25"
+                    android:onClick="g25"
+                    android:background="#959494"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="#959494"
+                    android:text="3"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="IT110"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="FUNDAMENTALS OF ACCOUNTING "
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:id="@+id/g26"
+                    android:onClick="g26"
+
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="NATSC"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="PHYSICS 2"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:id="@+id/g27"
+                    android:onClick="g27"
+                    android:background="#959494"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="FIL2C"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="PANANALIKSIK"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:id="@+id/g28"
+                    android:onClick="g28"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+
+
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="2"
+                android:gravity="center"
+                android:paddingTop="60dp"
+                android:paddingBottom="5dp"
+
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TableRow>
+
+
+                <TextView
+                    android:layout_height="40dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Second Semester"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Code"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Subject"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.1"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Units"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="#959494"
+                    android:text="IT113"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#959494"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="MULTIMEDIA SYSTEM"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:background="#959494"
+                    android:paddingBottom="5dp"
+                    android:id="@+id/g29"
+                    android:onClick="g29"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="IT102"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="DATABASE MANAGEMENT"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g30"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:onClick="g30"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="IT111"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="#959494"
+                    android:text="OPERATING SYSTEM"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g31"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:onClick="g31"
+                    android:background="#959494"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="SOCSC"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="POLITICS"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g32"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:onClick="g32"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="HUM101"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="LITERATURE"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g33"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:background="#959494"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:onClick="g33"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="HUM102"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="CRITICAL THINKING "
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g34"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:onClick="g34"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="ENGL"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="#959494"
+                    android:text="MODERN COMMUNICATION"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView android:id="@+id/g35"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:onClick="g35"
+                    android:background="#959494"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="PE104"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="TEAM SPORTS"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g36"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:onClick="g36"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="SOCSC"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="#959494"
+                    android:text="PHILIPPINES HISTORY"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g37"
+                    android:onClick="g37"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+
+                    android:background="#959494"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+
+
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="2"
+                android:gravity="center"
+                android:paddingTop="60dp"
+                android:paddingBottom="5dp"
+                android:text="3rd Year"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+            <TableRow>
+
+
+                <TextView
+
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="First Semester"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+
+
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Code"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Subject"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.1"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Units"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="IT115"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="#959494"
+                    android:text="SYSTEM ANALYSIS"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g38"
+                    android:onClick="g38"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:background="#959494"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="#959494"
+                    android:text="3"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="SOCSC"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="SOCIETY CULTURE"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g39"
+                    android:onClick="g39"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="ELEC10"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="FREE ELECTIVE LANGUAGE"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g40"
+                    android:onClick="g40"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:background="#959494"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:background="#959494"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="ELEC12"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+
+                    android:text="CLIENT-SIDE CODING"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/g41"
+                    android:onClick="g41"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="IT114"
+                    android:background="#959494"
+
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="ADBMS"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g42"
+                    android:onClick="g42"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:background="#959494"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="#959494"
+                    android:text="3"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="IT116"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="NETWORK MANAGEMENT"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g43"
+                    android:onClick="g43"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="ELC10"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="ANDROID APPLICATION"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g44"
+                    android:onClick="g44"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:background="#959494"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="ELC10L"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="MOBILE PROGRAMMING"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g45"
+                    android:onClick="g45"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+
+
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="2"
+                android:gravity="center"
+                android:paddingTop="60dp"
+                android:paddingBottom="5dp"
+
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+            <TableRow>
+
+
+                <TextView
+
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Second Semester"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+
+
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Code"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Subject"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.1"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Units"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="IT122"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="#959494"
+                    android:text="INFORMATION ASSURANCE"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g46"
+                    android:onClick="g46"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:background="#959494"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="#959494"
+                    android:text="3"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="IT123"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="SYSTEM INTEGRATION"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g47"
+                    android:onClick="g47"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="IT124"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="CAPSTONE PROJECT1"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g48"
+                    android:onClick="g48"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:background="#959494"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:background="#959494"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="IT125"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+
+                    android:text="SOCIAL PROFESSION"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/g49"
+                    android:onClick="g49"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="ITELEC"
+                    android:background="#959494"
+
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="CYBER SECURITY"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g50"
+                    android:onClick="g50"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:background="#959494"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="#959494"
+                    android:text="3"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="ITELEC"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="DATA ANALYTICS "
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g51"
+                    android:onClick="g51"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+
+
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="2"
+                android:gravity="center"
+                android:paddingTop="60dp"
+                android:paddingBottom="5dp"
+                android:text="4th Year"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+            <TableRow>
+
+
+                <TextView
+
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="First Semester"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+
+
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Code"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Subject"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.1"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Units"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="HUM10"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="#959494"
+                    android:text="PHILOSOPHY"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g52"
+                    android:onClick="g52"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:background="#959494"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="#959494"
+                    android:text="3"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="IT121"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="TECHNOPRENEURSHIP"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g53"
+                    android:onClick="g53"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="ELEC3"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="MARKEING"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g54"
+                    android:onClick="g54"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:background="#959494"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:background="#959494"
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="ITI20"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+
+                    android:text="CAPSTONE 2"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/g55"
+                    android:onClick="g55"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+
+                    android:paddingBottom="5dp"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="ELECT"
+                    android:background="#959494"
+
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="ELECTIVE IN MAJOR"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g56"
+                    android:onClick="g56"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:background="#959494"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="#959494"
+                    android:text="3"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+
+
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="2"
+                android:gravity="center"
+                android:paddingTop="60dp"
+                android:paddingBottom="5dp"
+
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+            <TableRow>
+
+
+                <TextView
+
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Second Semester"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+
+
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Code"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Subject"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.1"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Units"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="ITI220"
+                    android:background="#959494"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="#959494"
+                    android:text="ON THE JOB TRANING "
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/g57"
+                    android:onClick="g57"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:background="#959494"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="#959494"
+                    android:text="3"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+            <TableRow>
+
+
+                <TextView
+
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingTop="50dp"
+                    android:paddingBottom="5dp"
+
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+
+
+
+
+            </TableRow>
+
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+

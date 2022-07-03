@@ -1,17 +1,27 @@
 package com.example.ucu_cite;
 
 public class User {
-    public  String name,name1,id,email,contact;
+    public  String name,idnum,email,contact,name1,pass;
 
-    public User(String name, String name1, String id, String email, String contact) {
+    public User(){
+
+    }
+    public User(String name, String name1,String pass,String idnum, String email, String contact) {
         this.name = name;
-        this.name1 = name1;
-        this.id = id;
+        this.name1 =name1;
+        this.pass = pass;
         this.email = email;
+        this.idnum = idnum;
         this.contact = contact;
+
+
     }
 
 
 
-}
+    }
+
+
+
+
 

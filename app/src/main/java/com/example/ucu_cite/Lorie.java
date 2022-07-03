@@ -1,7 +1,5 @@
 package com.example.ucu_cite;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -13,9 +11,11 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class Lorie extends AppCompatActivity {
-    ImageView fr;
-    TextView mess10;
+    ImageView fr,fr1;
+    TextView mess13;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +25,8 @@ public class Lorie extends AppCompatActivity {
         setContentView(R.layout.activity_lorie);
 
         fr = findViewById(R.id.fr);
+        fr1 = findViewById(R.id.fr1);
+
 
 
         fr.setOnClickListener(new View.OnClickListener() {
@@ -34,9 +36,17 @@ public class Lorie extends AppCompatActivity {
 
             }
         });
-        TextView mess10 = (TextView) findViewById(R.id.mess10);
-        mess10.setText(Html.fromHtml("<a href=\"mailto: lorieparagas@ucu.edu.ph\"> lorieparagas@ucu.edu.ph</a>"));
-        mess10.setMovementMethod(LinkMovementMethod.getInstance());
+
+        fr1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoUrl("https://www.facebook.com/loriejelenermillonparagas");
+
+            }
+        });
+        TextView mess13 = (TextView) findViewById(R.id.mess13);
+        mess13.setText(Html.fromHtml("<a href=\"mailto: lorieparagas@ucu.edu.ph\">.</a>"));
+        mess13.setMovementMethod(LinkMovementMethod.getInstance());
 
     }
 
@@ -47,8 +57,5 @@ public class Lorie extends AppCompatActivity {
     }
 
 
-    public void previous5(View view) {
-        Intent intent = new Intent(Lorie.this, Consultation.class);
-        startActivity(intent);
-    }
+
 }

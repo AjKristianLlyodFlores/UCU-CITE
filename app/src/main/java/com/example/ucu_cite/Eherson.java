@@ -1,7 +1,5 @@
 package com.example.ucu_cite;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -13,8 +11,10 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class Eherson extends AppCompatActivity {
-    ImageView fg;
+    ImageView fg,fg1;
     TextView mess11;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,7 @@ public class Eherson extends AppCompatActivity {
         setContentView(R.layout.activity_eherson);
 
         fg = findViewById(R.id.fg);
+        fg1 = findViewById(R.id.fg1);
 
 
         fg.setOnClickListener(new View.OnClickListener() {
@@ -34,8 +35,15 @@ public class Eherson extends AppCompatActivity {
 
             }
         });
+        fg1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoUrl("https://www.facebook.com/lmdvera");
+
+            }
+        });
         TextView mess11= (TextView) findViewById(R.id.mess11);
-        mess11.setText(Html.fromHtml("<a href=\"mailto:ehersonvaldez@ucu.edu.ph\"> ehersonvaldez@ucu.edu.ph</a>"));
+        mess11.setText(Html.fromHtml("<a href=\"mailto:ehersonvaldez@ucu.edu.ph\">.</a>"));
         mess11.setMovementMethod(LinkMovementMethod.getInstance());
 
     }
@@ -47,7 +55,7 @@ public class Eherson extends AppCompatActivity {
     }
 
 
-    public void previous3(View view) {
+    public void previous10(View view) {
         Intent intent = new Intent(Eherson.this, Consultation.class);
         startActivity(intent);
     }

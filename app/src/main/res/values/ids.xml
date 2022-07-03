@@ -18,4 +18,6 @@
 
     <item name="mCreateBtn" type="id" />
     <item name="txtDisplay" type="id" />
+    <item name="tab_layout" type="id" />
+    <item name="view_pager" type="id" />
 </resources>

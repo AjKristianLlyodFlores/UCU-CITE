@@ -1,29 +1,25 @@
 package com.example.ucu_cite;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-
-
-import android.content.Context;
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
-import android.widget.Button;
-import android.widget.ImageButton;
+import android.view.animation.Animation;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class hub extends AppCompatActivity {
@@ -31,15 +27,20 @@ public class hub extends AppCompatActivity {
     ImageView yu, it, ikonek, mis, psy, account, portal, ucusc;
 
 
-
+    GoogleSignInOptions gso;
+    GoogleSignInClient gsc;
+    Animation scaleUp,scaleDown;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hub);
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimary)));;
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.browser_actions_title_color)));
 
-        
+
+        gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).build();
+        gsc = GoogleSignIn.getClient(this,gso);
+        gsc.signOut();
 
 
         yu = findViewById(R.id.imageView8);
@@ -61,19 +62,23 @@ public class hub extends AppCompatActivity {
 
 
 
+GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
+  if(acct!=null){
+
+}
 
 
         yu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gotoUrl("https://ucu.edu.ph");
+                gotoUrl("https://www.facebook.com/UCUOfficial");
 
             }
         });
         ucu1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gotoUrl("https://ucu.edu.ph");
+                gotoUrl("https://www.facebook.com/UCUOfficial");
 
             }
         });
@@ -189,21 +194,38 @@ public class hub extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int item_id=item.getItemId();
-        if (item_id==R.id.PF){
-            Toast.makeText(this,"This is Profile ",Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(hub.this, aboutus.class);
-            startActivity(intent);
-        }
-        else if (item_id==R.id.CT){
+          if (item_id==R.id.CT){
             Toast.makeText(this,"This is Consutation  ",Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(hub.this, Consultation.class);
-            startActivity(intent);
+            Intent i = new Intent(this,Consultation.class);
+             Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+            startActivity(i,b);
         }
-        else if (item_id==R.id.AP){
-            Toast.makeText(this,"API GOOGLE MAP",Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(hub.this,API.class);
-            startActivity(intent);
+        else if (item_id==R.id.CU){
+            Toast.makeText(this,"This is Curriculum  ",Toast.LENGTH_SHORT).show();
+              Intent i = new Intent(this,Curriculum.class );
+              Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+              startActivity(i,b);
         }
+          else if (item_id==R.id.enroll){
+              Toast.makeText(this,"This is Online Enrollment  ",Toast.LENGTH_SHORT).show();
+              Intent i = new Intent(this,Enrollment.class );
+              Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+              startActivity(i,b);
+          }
+
+        else if (item_id==R.id.Messageus){
+            Toast.makeText(this,"About Us",Toast.LENGTH_SHORT).show();
+             Intent i = new Intent(this, aboutus.class );
+              Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+              startActivity(i,b);
+        }
+        else if (item_id==R.id.block){
+            Toast.makeText(this,"BLOCKING AREA",Toast.LENGTH_SHORT).show();
+              Intent i = new Intent(this,Blocking.class );
+              Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+              startActivity(i,b);
+        }
+
         else if (item_id==R.id.out){
             Toast.makeText(this,"Exit",Toast.LENGTH_SHORT).show();
             FirebaseAuth.getInstance().signOut();
@@ -231,6 +253,7 @@ public class hub extends AppCompatActivity {
         Intent intent = new Intent(hub.this, Consultation.class);
         startActivity(intent);
     }
+
 
     public void about(View view) {
         Intent intent = new Intent(hub.this, aboutus.class);

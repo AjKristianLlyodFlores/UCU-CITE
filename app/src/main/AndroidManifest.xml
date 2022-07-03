@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.ucu_cite">
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -8,15 +9,52 @@
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/bg"
+        android:icon="@drawable/logos"
         android:label="UCU"
-        android:logo="@drawable/bg"
+        android:logo="@drawable/logos"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UCU_CITE">
+        <activity
+            android:name=".save5"
+            android:exported="false" />
+        <activity
+            android:name=".save4"
+            android:exported="false" />
+        <activity
+            android:name=".save3"
+            android:exported="false" />
+        <activity
+            android:name=".save1"
+            android:exported="false" />
+        <activity
+            android:name=".save2"
+            android:exported="false" />
+        <activity
+            android:name=".save"
+            android:exported="false" />
+        <activity
+            android:name=".Enrollment"
+            android:exported="false" />
+        <activity
+            android:name=".Notification"
+            android:exported="false" />
+        <activity
+            android:name=".Curriculum"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".blocking2"
+            android:exported="false" />
+        <activity
+            android:name=".Blocking"
+            android:exported="false" />
         <activity
             android:name=".Christian"
             android:exported="false" />
@@ -103,9 +141,16 @@
             </intent-filter>
         </activity>
 
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
+
+
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

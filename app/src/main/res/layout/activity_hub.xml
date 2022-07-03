@@ -4,31 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:backgroundTint="@color/white"
+    android:background="@drawable/bg123"
     tools:context=".hub">
 
 
+    <TextView
+        android:id="@+id/textView72"
+        android:layout_width="462dp"
+        android:layout_height="3dp"
+        android:background="#303030"
+        app:layout_constraintTop_toBottomOf="@+id/log"
+        tools:layout_editor_absoluteX="-39dp" />
+
     <ImageView
         android:id="@+id/log"
-        android:layout_width="422dp"
-        android:layout_height="48dp"
-
-        android:background="#D8D7D7"
+        android:layout_width="490dp"
+        android:layout_height="58dp"
+        android:background="#959494"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bg"
+        app:srcCompat="@drawable/logos"
         tools:ignore="UnknownId" />
 
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="130dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="40dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="42dp"
         android:layout_marginTop="80dp"
-        android:background="#D8D7D7"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/yu" />
@@ -36,10 +42,10 @@
     <ImageView
         android:id="@+id/it"
         android:layout_width="130dp"
-        android:layout_height="120dp"
+        android:layout_height="115dp"
         android:layout_marginTop="80dp"
-        android:layout_marginEnd="44dp"
-        android:background="#D8D7D7"
+        android:layout_marginEnd="42dp"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.94"
         app:layout_constraintStart_toEndOf="@+id/imageView8"
@@ -50,12 +56,12 @@
         android:id="@+id/ucu1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="33dp"
         android:layout_marginTop="12dp"
-        android:background="#FAF6F6"
+        android:background="@color/white"
         android:text="URDANETA CITY UNIVERSITY"
         android:textAlignment="center"
-        android:textColor="#000000"
+        android:textColor="@color/black"
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,10 +73,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="72dp"
         android:layout_marginTop="12dp"
-        android:background="#FDFBFB"
-        android:text="UCU_IKONEK"
+        android:background="@color/white"
+        android:text="UCU IKONEK"
         android:textAlignment="center"
-        android:textColor="#000000"
+        android:textColor="@color/black"
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -80,12 +86,12 @@
         android:id="@+id/psy1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="12dp"
-        android:background="#FDFBFB"
-        android:text="UCU_PSYCHOLOGICAL"
+        android:background="@color/white"
+        android:text="UCU PSYCHOLOGICAL"
         android:textAlignment="center"
-        android:textColor="#000000"
+        android:textColor="@color/black"
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -97,10 +103,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="72dp"
         android:layout_marginTop="12dp"
-        android:background="#FDFBFB"
-        android:text="UCU_PORTAL"
+        android:background="@color/white"
+        android:text="UCU PORTAL"
         android:textAlignment="center"
-        android:textColor="#000000"
+        android:textColor="@color/black"
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -111,14 +117,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:background="#FDFBFB"
-        android:text="UCU_SC"
+        android:background="@color/white"
+        android:text="UCU SC"
         android:textAlignment="center"
-        android:textColor="#000000"
+        android:textColor="@color/black"
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.607"
+        app:layout_constraintHorizontal_bias="0.608"
         app:layout_constraintStart_toEndOf="@+id/portal1"
         app:layout_constraintTop_toBottomOf="@+id/ucusc" />
 
@@ -127,14 +133,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:background="#FDFBFB"
-        android:text="UCU_ACCOUNTING"
+        android:background="@color/white"
+        android:text="UCU ACCOUNTING"
         android:textAlignment="center"
-        android:textColor="#000000"
+        android:textColor="@color/black"
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.581"
+        app:layout_constraintHorizontal_bias="0.661"
         app:layout_constraintStart_toEndOf="@+id/psy1"
         app:layout_constraintTop_toBottomOf="@+id/account" />
 
@@ -143,14 +149,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:background="#FDFBFB"
-        android:text="UCU_MIS+"
+        android:background="@color/white"
+        android:text="UCU MIS+"
         android:textAlignment="center"
-        android:textColor="#000000"
+        android:textColor="@color/black"
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.598"
+        app:layout_constraintHorizontal_bias="0.649"
         app:layout_constraintStart_toEndOf="@+id/ikonek1"
         app:layout_constraintTop_toBottomOf="@+id/mis" />
 
@@ -159,14 +165,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:background="#FDFBFB"
-        android:text="UCU_IT_SITE"
+        android:background="@color/white"
+        android:text="UCU IT SITE"
         android:textAlignment="center"
-        android:textColor="#000000"
+        android:textColor="@color/black"
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintHorizontal_bias="0.582"
         app:layout_constraintStart_toEndOf="@+id/ucu1"
         app:layout_constraintTop_toBottomOf="@+id/it" />
 
@@ -174,9 +180,9 @@
         android:id="@+id/ikonek"
         android:layout_width="130dp"
         android:layout_height="120dp"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="42dp"
         android:layout_marginTop="24dp"
-        android:background="#D8D7D7"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ucu1"
         app:srcCompat="@drawable/ikonek" />
@@ -186,9 +192,10 @@
         android:layout_width="130dp"
         android:layout_height="120dp"
         android:layout_marginTop="24dp"
-        android:background="#D8D7D7"
+        android:layout_marginEnd="42dp"
+
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintHorizontal_bias="0.94"
         app:layout_constraintStart_toEndOf="@+id/ikonek"
         app:layout_constraintTop_toBottomOf="@+id/it1"
         app:srcCompat="@drawable/ucumis" />
@@ -197,9 +204,9 @@
         android:id="@+id/psy"
         android:layout_width="130dp"
         android:layout_height="120dp"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="42dp"
         android:layout_marginTop="24dp"
-        android:background="#D8D7D7"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ikonek1"
         app:srcCompat="@drawable/ucup" />
@@ -209,9 +216,10 @@
         android:layout_width="130dp"
         android:layout_height="120dp"
         android:layout_marginTop="24dp"
-        android:background="#D8D7D7"
+        android:layout_marginEnd="42dp"
+
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintHorizontal_bias="0.94"
         app:layout_constraintStart_toEndOf="@+id/psy"
         app:layout_constraintTop_toBottomOf="@+id/mis1"
         app:srcCompat="@drawable/ucuacc" />
@@ -220,9 +228,9 @@
         android:id="@+id/portal"
         android:layout_width="130dp"
         android:layout_height="120dp"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="42dp"
         android:layout_marginTop="24dp"
-        android:background="#D8D7D7"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/psy1"
         app:srcCompat="@drawable/ucuportal" />
@@ -232,13 +240,13 @@
         android:layout_width="130dp"
         android:layout_height="120dp"
         android:layout_marginTop="24dp"
-        android:background="#D8D7D7"
+        android:layout_marginEnd="42dp"
+
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintHorizontal_bias="0.94"
         app:layout_constraintStart_toEndOf="@+id/portal"
         app:layout_constraintTop_toBottomOf="@+id/account1"
         app:srcCompat="@drawable/ucusc" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

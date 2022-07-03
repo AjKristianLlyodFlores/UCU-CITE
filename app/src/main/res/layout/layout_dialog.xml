@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#959494"
+    android:padding="16dp">
+
+
+    <EditText
+        android:id="@+id/nickname"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Grade" />
+
+    <EditText
+        android:id="@+id/nickname1"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nickname"
+        android:hint="Enter your Grade" />
+
+</RelativeLayout>

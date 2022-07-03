@@ -1,7 +1,5 @@
 package com.example.ucu_cite;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -13,8 +11,10 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class Jesse extends AppCompatActivity {
-    ImageView fi;
+    ImageView fi,fi1;
     TextView mess9;
 
     @Override
@@ -27,6 +27,7 @@ public class Jesse extends AppCompatActivity {
 
 
         fi = findViewById(R.id.fi);
+        fi1 = findViewById(R.id.fi1);
 
 
         fi.setOnClickListener(new View.OnClickListener() {
@@ -36,8 +37,15 @@ public class Jesse extends AppCompatActivity {
 
             }
         });
+        fi1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoUrl("https://www.facebook.com/jesse.j.fernandez.58");
+
+            }
+        });
         TextView mess9 = (TextView) findViewById(R.id.mess9);
-        mess9.setText(Html.fromHtml("<a href=\"mailto:jessefernandez@ucu.edu.ph\"> jessefernandez@ucu.edu.ph</a>"));
+        mess9.setText(Html.fromHtml("<a href=\"mailto:jessefernandez@ucu.edu.ph\">.</a>"));
         mess9.setMovementMethod(LinkMovementMethod.getInstance());
 
     }

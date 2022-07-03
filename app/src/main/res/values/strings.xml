@@ -4,4 +4,8 @@
     <string name="title_activity_maps">MapsActivity</string>
     <string name="title_activity_api">API</string>
 
+
+    <string name="facebook_app_id">398607122232037</string>
+    <string name="fb_login_protocol_scheme">fb398607122232037</string>
+
 </resources>

@@ -1,7 +1,5 @@
 package com.example.ucu_cite;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -13,9 +11,11 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class Anthony extends AppCompatActivity {
-    ImageView fq;
-    TextView mess15;
+    ImageView fq,fq1;
+    TextView mess1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +25,8 @@ public class Anthony extends AppCompatActivity {
         setContentView(R.layout.activity_anthony);
 
         fq = findViewById(R.id.fq);
+        fq1 = findViewById(R.id.fq1);
+
 
 
         fq.setOnClickListener(new View.OnClickListener() {
@@ -34,9 +36,16 @@ public class Anthony extends AppCompatActivity {
 
             }
         });
-        TextView mess15 = (TextView) findViewById(R.id.mess15);
-        mess15.setText(Html.fromHtml("<a href=\"mailto:anthonymarquez@ucu.edu.ph\"> anthonymarquez@ucu.edu.ph</a>"));
-        mess15.setMovementMethod(LinkMovementMethod.getInstance());
+        fq1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoUrl("https://www.facebook.com/an2nymarquez");
+
+            }
+        });
+        TextView mess1 = (TextView) findViewById(R.id.mess1);
+        mess1.setText(Html.fromHtml("<a href=\"mailto:anthonymarquez@ucu.edu.ph\">.</a>"));
+        mess1.setMovementMethod(LinkMovementMethod.getInstance());
 
     }
 

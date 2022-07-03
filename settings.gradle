@@ -8,3 +8,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "UCU_CITE"
 include ':app'
+
+include ':adminpanel'

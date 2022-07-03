@@ -1,12 +1,13 @@
 package com.example.ucu_cite;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -28,8 +29,9 @@ public class Consultation extends AppCompatActivity {
 
 
         public void rabago (View view){
-            Intent intent = new Intent(Consultation.this, JHOHANS.class);
-            startActivity(intent);
+            Intent i = new Intent(this,JHOHANS.class );
+            Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+            startActivity(i,b);
         }
         public void LOGOUT (View view){
             FirebaseAuth.getInstance().signOut();
@@ -40,80 +42,95 @@ public class Consultation extends AppCompatActivity {
 
 
         public void dorado (View view){
-            Intent intent = new Intent(Consultation.this, danilo.class);
-            startActivity(intent);
+            Intent i = new Intent(this,danilo.class );
+            Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+            startActivity(i,b);
         }
 
 
         public void Caoile (View view){
-            Intent intent = new Intent(Consultation.this, jeffrey.class);
-            startActivity(intent);
+            Intent i = new Intent(this,jeffrey.class );
+            Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+            startActivity(i,b);
         }
 
     public void valdez(View view) {
-        Intent intent = new Intent(Consultation.this, Elmer.class);
-        startActivity(intent);
+        Intent i = new Intent(this,Elmer.class );
+        Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(i,b);
     }
 
     public void jay(View view) {
-        Intent intent = new Intent(Consultation.this, Jesse.class);
-        startActivity(intent);
+        Intent i = new Intent(this,Jesse.class );
+        Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(i,b);
     }
 
     public void jelene(View view) {
-        Intent intent = new Intent(Consultation.this,Lorie.class);
-        startActivity(intent);
+        Intent i = new Intent(this,Lorie.class );
+        Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(i,b);
     }
 
     public void maricel(View view) {
-        Intent intent = new Intent(Consultation.this,Maricel.class);
-        startActivity(intent);
+        Intent i = new Intent(this,Maricel.class );
+        Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(i,b);
     }
 
     public void ocay(View view) {
-        Intent intent = new Intent(Consultation.this,Arnel.class);
-        startActivity(intent);
+        Intent i = new Intent(this,Arnel.class );
+        Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(i,b);
     }
 
 
     public void micua(View view) {
-        Intent intent = new Intent(Consultation.this,Jeremi.class);
-        startActivity(intent);
+        Intent i = new Intent(this,Jeremi.class );
+        Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(i,b);
     }
 
     public void lhanie(View view) {
-        Intent intent = new Intent(Consultation.this,Lhanie.class);
-        startActivity(intent);
+        Intent i = new Intent(this,Lhanie.class );
+        Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(i,b);
     }
 
     public void eherson(View view) {
-        Intent intent = new Intent(Consultation.this,Eherson.class);
-        startActivity(intent);
+        Intent i = new Intent(this,Eherson.class );
+        Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(i,b);
     }
 
     public void joemark(View view) {
-        Intent intent = new Intent(Consultation.this,Joemark.class);
-        startActivity(intent);
+        Intent i = new Intent(this,Joemark.class );
+        Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(i,b);
     }
 
     public void rubilyn(View view) {
-        Intent intent = new Intent(Consultation.this,Rubilyn.class);
-        startActivity(intent);
+        Intent i = new Intent(this,Rubilyn.class );
+        Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(i,b);
     }
 
     public void dionnel(View view) {
-        Intent intent = new Intent(Consultation.this,Dionnel.class);
-        startActivity(intent);
+        Intent i = new Intent(this,Dionnel.class );
+        Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(i,b);
     }
 
     public void anthony(View view) {
-        Intent intent = new Intent(Consultation.this,Anthony.class);
-        startActivity(intent);
+        Intent i = new Intent(this,Anthony.class );
+        Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(i,b);
     }
 
     public void christian(View view) {
-        Intent intent = new Intent(Consultation.this,Christian.class);
-        startActivity(intent);
+        Intent i = new Intent(this,Christian.class );
+        Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(i,b);
     }
 }
 

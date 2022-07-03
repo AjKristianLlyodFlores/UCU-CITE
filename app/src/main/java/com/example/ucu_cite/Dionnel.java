@@ -1,7 +1,5 @@
 package com.example.ucu_cite;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -13,9 +11,11 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class Dionnel extends AppCompatActivity {
-    ImageView fd;
-    TextView mess14;
+    ImageView fg,fg1;
+    TextView mess04;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,19 +24,27 @@ public class Dionnel extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_dionnel);
 
-        fd = findViewById(R.id.fd);
+        fg = findViewById(R.id.fg);
+        fg1 = findViewById(R.id.fg1);
 
-
-        fd.setOnClickListener(new View.OnClickListener() {
+        fg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gotoUrl("https://www.facebook.com/rubilyn.nonales.3");
+                gotoUrl("https://www.facebook.com/dnnelcaguin");
 
             }
         });
-        TextView mess14= (TextView) findViewById(R.id.mess14);
-        mess14.setText(Html.fromHtml("<a href=\"mailto:rubilynnonales@ucu.edu.ph\"> rubilynnonales@ucu.edu.ph</a>"));
-        mess14.setMovementMethod(LinkMovementMethod.getInstance());
+        fg1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoUrl("https://www.facebook.com/dnnelcaguin");
+
+            }
+        });
+        TextView mess02 = (TextView) findViewById(R.id.mess02);
+        mess02.setText(Html.fromHtml("<a href=\"mailto:dionnelcaguin@ucu.edu.ph\">.</a>"));
+        mess02.setMovementMethod(LinkMovementMethod.getInstance());
+
 
     }
 
@@ -44,11 +52,5 @@ public class Dionnel extends AppCompatActivity {
     private void gotoUrl(String s) {
         Uri uri = Uri.parse(s);
         startActivity(new Intent(Intent.ACTION_VIEW, uri));
-    }
-
-
-    public void previous13(View view) {
-        Intent intent = new Intent(Dionnel.this, Consultation.class);
-        startActivity(intent);
     }
 }
