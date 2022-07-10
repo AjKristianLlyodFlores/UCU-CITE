@@ -80,7 +80,7 @@
                     android:paddingTop="10dp"
                     android:gravity="center"
                     android:paddingBottom="5dp"
-                    android:text="GENERAL CHEMSTRY"
+                    android:text="DISCRETE MATH"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
@@ -108,7 +108,7 @@
                     android:gravity="center"
 
                     android:paddingBottom="5dp"
-                    android:text="LITERACY TRANING 1"
+                    android:text="DATA STRUCTURE"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
@@ -134,7 +134,7 @@
                     android:background="@drawable/textview1"
                     android:paddingTop="10dp"
                     android:paddingBottom="5dp"
-                    android:text="STUDY SKILLS AND CRITICAL"
+                    android:text="SPEECH IMPROVEMENT"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
@@ -161,7 +161,7 @@
                     android:background="@drawable/textview1"
                     android:paddingTop="10dp"
                     android:paddingBottom="5dp"
-                    android:text="GENERAL PSYCHOLOGYW/ HIV"
+                    android:text="ORIENTED PROGRAMMING"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
@@ -188,7 +188,7 @@
                     android:background="@drawable/textview1"
                     android:paddingTop="10dp"
                     android:paddingBottom="5dp"
-                    android:text="ALGEBRA"
+                    android:text="WEB DESIGN"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
@@ -214,7 +214,7 @@
                     android:background="@drawable/textview1"
                     android:paddingTop="10dp"
                     android:paddingBottom="5dp"
-                    android:text="PHYSICAL FITNESS"
+                    android:text="FUNDAMENTALS OF ACCOUNTING"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
@@ -240,7 +240,7 @@
                     android:background="@drawable/textview1"
                     android:paddingTop="10dp"
                     android:paddingBottom="5dp"
-                    android:text="INTRO TO I.T"
+                    android:text="PHYSICS 2"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
@@ -267,7 +267,7 @@
                     android:background="@drawable/textview1"
                     android:paddingTop="10dp"
                     android:paddingBottom="5dp"
-                    android:text="COMPUTER PROGRAMMING"
+                    android:text="PANANALIKSIK"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
@@ -295,7 +295,7 @@
                     android:layout_marginTop="40dp"
                     android:backgroundTint="@color/black"
                     android:paddingTop="10dp"
-                    android:text="Button"
+                    android:text="Save"
                     android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />

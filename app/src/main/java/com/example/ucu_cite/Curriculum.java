@@ -61,11 +61,12 @@ public class Curriculum extends AppCompatActivity {
     public static final String TEXT42 = "text42";
     public static final String TEXT43 = "text43";
     public static final String TEXT44 = "text44";
+    public static final String TEXT45 = "text45";
 
     private String text,text1,text2,text3,text4,text5,text6,text7,text8,text9,text10,text11,text12,text13,text14,text15,text16,text17,text18,text19,text20,text21,text22,text23,text24,text25,text26,text27
-            ,text28,text29,text30,text31,text32,text33,text34,text35,text36,text37,text38,text39,text40,text41,text42,text43,text44;
+            ,text28,text29,text30,text31,text32,text33,text34,text35,text36,text37,text38,text39,text40,text41,text42,text43,text44,text45;
 
-    TextView g1,g2,g3,g4,g5,g6,g7,g8,g9,g10,g11,g12,g13,g14,g15,g16,g17,g18,g19,g20,g21,g22,g23,g24,g25,g26,g27,g28,g29,g30,g31,g32,g33,g34,g35,g36,g37,g38,g39,g40,g41,g42,g43,g44,g45;
+    TextView g1,g2,g3,g4,g5,g6,g7,g8,g9,g10,g11,g12,g13,g14,g15,g16,g17,g18,g19,g20,g21,g22,g23,g24,g25,g26,g27,g28,g29,g30,g31,g32,g33,g34,g35,g36,g37,g38,g39,g40,g41,g42,g43,g44,g45,g57;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -122,6 +123,7 @@ public class Curriculum extends AppCompatActivity {
         g43 = findViewById(R.id.g43);
         g44 = findViewById(R.id.g44);
         g45 = findViewById(R.id.g45);
+        g57 = findViewById(R.id.g57);
 
 //        g1.setOnClickListener(new View.OnClickListener( ) {
 //            @Override
@@ -180,6 +182,7 @@ public class Curriculum extends AppCompatActivity {
         String see42 = getIntent().getStringExtra("keyname42");
         String see43 = getIntent().getStringExtra("keyname43");
         String see44 = getIntent().getStringExtra("keyname44");
+        String see45 = getIntent().getStringExtra("keyname45");
 
         g1.setText(see);
         g2.setText(see1);
@@ -231,6 +234,7 @@ public class Curriculum extends AppCompatActivity {
         g43.setText(see42);
         g44.setText(see43);
         g45.setText(see44);
+        g57.setText(see45);
 
 
         update();
@@ -238,6 +242,14 @@ public class Curriculum extends AppCompatActivity {
         update2();
         update3();
         update4();
+        update5();
+    }
+
+    private void update5() {
+        SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREF,MODE_PRIVATE);
+
+        text45 = sharedPreferences.getString(TEXT45, "");
+        g57.setText(text45);
     }
 
     private void update4() {
@@ -552,6 +564,10 @@ public class Curriculum extends AppCompatActivity {
 
     public void g45(View view) {
         Intent intent = new Intent(Curriculum.this, save4.class);
+        startActivity(intent);
+    }
+    public void g57(View view) {
+        Intent intent = new Intent(Curriculum.this, save5.class);
         startActivity(intent);
     }
 
