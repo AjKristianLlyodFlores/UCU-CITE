@@ -296,7 +296,7 @@
                     android:layout_marginTop="40dp"
                     android:backgroundTint="@color/black"
                     android:paddingTop="10dp"
-                    android:text="Button"
+                    android:text="Save"
                     android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />

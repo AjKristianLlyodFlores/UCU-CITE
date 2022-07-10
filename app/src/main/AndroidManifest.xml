@@ -14,7 +14,7 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/logos"
-        android:label="UCU"
+        android:label="UCUCite"
         android:logo="@drawable/logos"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"

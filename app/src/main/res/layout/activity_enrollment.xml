@@ -115,14 +115,14 @@
             android:id="@+id/textView9"
             android:layout_width="230dp"
             android:layout_height="27dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="28dp"
             android:text="ENROLLMENT"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.692"
+            app:layout_constraintHorizontal_bias="0.545"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

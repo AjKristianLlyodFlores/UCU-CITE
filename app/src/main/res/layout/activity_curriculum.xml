@@ -623,11 +623,11 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_weight="0.4"
+                    android:layout_weight="0.2"
                     android:gravity="center"
                     android:paddingTop="5dp"
                     android:paddingBottom="5dp"
-                    android:text=""
+                    android:text="Grade"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
                 <TextView
@@ -1172,11 +1172,11 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_weight="0.4"
+                    android:layout_weight="0.2"
                     android:gravity="center"
                     android:paddingTop="5dp"
                     android:paddingBottom="5dp"
-                    android:text=""
+                    android:text="Grade"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
                 <TextView
@@ -1626,11 +1626,11 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_weight="0.4"
+                    android:layout_weight="0.2"
                     android:gravity="center"
                     android:paddingTop="5dp"
                     android:paddingBottom="5dp"
-                    android:text=""
+                    android:text="Grade"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
                 <TextView
@@ -2131,11 +2131,11 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_weight="0.4"
+                    android:layout_weight="0.2"
                     android:gravity="center"
                     android:paddingTop="5dp"
                     android:paddingBottom="5dp"
-                    android:text=""
+                    android:text="Grade"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
                 <TextView
@@ -2589,11 +2589,11 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_weight="0.4"
+                    android:layout_weight="0.2"
                     android:gravity="center"
                     android:paddingTop="5dp"
                     android:paddingBottom="5dp"
-                    android:text=""
+                    android:text="Grade"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
                 <TextView
@@ -2956,11 +2956,11 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_weight="0.4"
+                    android:layout_weight="0.2"
                     android:gravity="center"
                     android:paddingTop="5dp"
                     android:paddingBottom="5dp"
-                    android:text=""
+                    android:text="Grade"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
                 <TextView
@@ -3277,11 +3277,11 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_weight="0.4"
+                    android:layout_weight="0.2"
                     android:gravity="center"
                     android:paddingTop="5dp"
                     android:paddingBottom="5dp"
-                    android:text=""
+                    android:text="Grade"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
                 <TextView
